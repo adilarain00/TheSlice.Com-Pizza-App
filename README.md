@@ -1,5 +1,7 @@
 # The Slice.com: Pizza Ordering App.
 
+<img src="./public/slice.PNG" style="height: 400px; width: 100%; border-radius: 10px" />
+
 ### Description.
 
 The Slice.com is a beautifully designed and responsive React.js pizza ordering app. With slice.com, enjoy a seamless pizza ordering experience. This responsive React.js app allows you to personalize your order by entering your name, selecting pizzas from the menu, and specifying the quantity.

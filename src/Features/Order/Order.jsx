@@ -1,5 +1,8 @@
 // Test ID: IIDSAT
 import { useFetcher, useLoaderData } from 'react-router-dom';
+
+import OrderItem from './OrderItem';
+
 import { getOrder } from '../../services/apiRestaurant';
 import {
   calcMinutesLeft,
@@ -7,9 +10,7 @@ import {
   formatDate,
 } from '../../utils/helpers';
 import { useEffect } from 'react';
-
 import UpdateOrder from './UpdateOrder';
-import OrderItem from './OrderItem';
 
 function Order() {
   const order = useLoaderData();
@@ -22,6 +23,7 @@ function Order() {
     [fetcher]
   );
 
+  // Everyone can search for all orders, so for privacy reasons we're gonna gonna exclude names or address, these are only for the restaurant staff
   const {
     id,
     status,
